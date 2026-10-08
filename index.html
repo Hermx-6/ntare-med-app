@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTARE MED</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { font-family: 'Inter', sans-serif; }
+  html.dark body { background:#0B1220; color:#f1f5f9; }
+  .navy { background-color: #0F172A; }
+  .screen { display: none; }
+  .fade-in { animation: fadeIn .3s ease; }
+  @keyframes fadeIn { from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+  .wizard-step { display: none; }
+  .wizard-step.active { display: block; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+
+<button id="themeToggle" class="fixed top-4 right-4 z-50 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full px-3 py-2 text-xs font-semibold shadow-sm hover:shadow transition">🌙 Dark</button>
+
+<section id="screen-login" class="screen min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-md fade-in">
+    <div class="flex flex-col items-center mb-8">
+      <img src="data:image/png;base64,REPLACE_WITH_EMBEDDED_LOGO" class="w-8 h-8" alt="logo">
+      <div>
+        <p class="font-extrabold text-sm leading-none">NTARE MED</p>
+        <p class="text-[10px] text-blue-300 italic">Stronger Health, Smarter School.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const SCHOOL_DOMAIN = "@ntare-louisenlund.org";
+  const ADMIN_EMAILS = ["abayo.aldo31@ntare-louisenlund.org","irakoze.dieudonne31@ntare-louisenlund.org","jes.washington@ntare-louisenlund.org","byilingiro.ulric31@ntare-louisenlund.org"];
+</script>
+</body>
+</html>
